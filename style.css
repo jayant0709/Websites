@@ -1,38 +1,57 @@
-body{
+body {
     background: #000000;
-    color: #000000;
+    color: #ffffff;
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
 }
-.navigation{
+
+.navigation {
     width: fit-content;
+    display: flex;
 }
-#profile_img{
+
+#profile_img {
     width: 400px;
     height: auto;
     position: relative;
     top: 100px;
-    left: 700px;
+    left: 500px;
+    border-radius: 10px;
 }
-.navigation_contents li{
+
+.navigation_contents li {
     list-style-type: none;
     color: white;
     padding: 10px 10px;
     float: left;
 }
-.navigation_contents li a{
-    font-family: 'Noto Sans', sans-serif;
+
+.navigation_contents li a {
     font-weight: bold;
     text-decoration: none;
     color: white;
 }
-.navigation_contents li a:hover{
+
+.navigation_contents li a:hover {
     color: aqua;
 }
-.navigation_contents{
+
+.navigation_contents {
     position: relative;
-    left: 220%;
+    left: 135%;
 }
-#About_Me{
+
+.Hello {
     color: white;
-    position: relative;
-    top: -320px;
+    position: absolute;
+    left: 20%;
+    top: 40%;
+}
+.Hello h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+}
+.Hello p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
 }
