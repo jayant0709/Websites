@@ -13,7 +13,7 @@ body {
 }
 
 #profile_img {
-    width: 400px;
+    width: 25%;
     height: auto;
     position: absolute;
     top: 20%;
@@ -35,6 +35,8 @@ body {
     text-decoration: none;
     color: white;
     border: 2px solid red;
+    padding: 10px;
+
 }
 
 .navigation_contents li a:hover {
@@ -44,13 +46,13 @@ body {
 .navigation_contents {
     position: absolute;
     border: 2px solid blue;
-    left: 65%;
+    right:2%;
 }
 
 .Hello {
     color: white;
     position: absolute;
-    left: 20%;
+    right: 50%;
     top: 40%;
     border: 2px solid brown;
     padding: 10px;
