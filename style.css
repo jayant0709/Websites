@@ -53,29 +53,35 @@ body {
     left: 20%;
     top: 40%;
     border: 2px solid brown;
+    padding: 10px;
+    height: 150px;
+    width: 400px;
 }
 .Hello h1{
     font-family: 'Playfair Display', serif;
     font-size: 50px;
+    position: absolute;
+    border: 2px solid green;
 }
 .Hello p{
     font-family: 'Quicksand', sans-serif;
     color: #000000;
-    font-size: 25px;
-    position: relative;
-    top: -50px;
+    font-size: 20px;
+    position: absolute;
+    top: 55%;
+    border: 2px solid fuchsia;
 }
-.Hello p::backdrop {
+/* .Hello p::backdrop {
     overflow: hidden;
     position: relative;
     color: rgb(0, 0, 0);
-}
+} */
 .Hello p{
     content: "";
     display: inline-block;
     vertical-align: top;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 20%;
     background: linear-gradient(to right, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 50%, rgb(255, 255, 255) 50%, rgb(0, 0, 0) 100%);
     background-size: 200% 100%;
     animation: typing 3s steps(40) forwards;
