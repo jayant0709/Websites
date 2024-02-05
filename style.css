@@ -4,7 +4,7 @@ body {
     font-family: 'Noto Sans', sans-serif;
     scroll-behavior: smooth;
     height: 1000px;
-    margin: 0; /* Remove default margin */
+    margin: 0; 
 }
 .outer{
     width: 100%;
@@ -12,25 +12,29 @@ body {
     position: absolute;
 }
 .navigation {
-    width: auto;;
-    display: flex;
+    width: auto;
+    height: 70%;
+    background-color: rgb(0, 0, 0);
+    display: flex;  
 }
 
 #profile_img {
-    width: 25%;
+    width: 50%;
     height: auto;
     position: absolute;
-    top: 25%;
-    left: 60%;
-    border-radius: 10px;
+    right: -70%;
+    top: -20%;
+    border-radius: 50px;
     z-index: 1;
 }
 
 .navigation_contents li {
     list-style-type: none;
+    display: inline-block;
+    margin-right: 3.5%;
     color: rgb(255, 255, 255);
-    padding: 10px 10px;
-    float: left;
+    padding: 10px 2px;
+    padding-top: 15px;
     border: 2px solid green;
 }
 
@@ -39,18 +43,22 @@ body {
     text-decoration: none;
     color: white;
     border: 2px solid red;
-    padding: 10px;
+    padding: 5px 2px;
 
 }
 
 .navigation_contents li a:hover {
-    color: aqua;
+    color: rgb(183, 0, 255);
 }
 
 .navigation_contents {
-    position: absolute;
+    position: fixed;
     border: 2px solid blue;
-    right:2%;
+    width: 100%;
+    z-index: 3;
+    background-color: #000000;
+    text-align: right;
+    margin-top: 0;
 }
 
 .Hello {
@@ -61,14 +69,15 @@ body {
     border: 2px solid brown;
     padding: 5px;
     /* height: 20%; */
-    height: 150px;  
+    height: 180px;  
     /* width: 25%; */
-    width: 400px;
+    width: 500px;
 }
 .Hello h1{
     font-family: 'Playfair Display', serif;
     font-size: 300%;
     position: absolute;
+    text-shadow: 0 0 20px rgb(232, 45, 45);
     border: 2px solid green;
 }
 .Hello p{
@@ -94,6 +103,36 @@ body {
     background-size: 200% 100%;
     animation: typing 3s steps(40) forwards;
 }
+
+.about{
+    margin: 2px;
+    position: relative;
+    height: 180%;
+    border: 2px solid darkcyan;
+    text-align: right;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+.about h1{
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    left: 45%;
+    width: 50%;
+    border: 2px solid violet;
+    text-align: center;
+    margin-bottom: 5%;
+    text-shadow: 0 0 20px rgb(232, 45, 45);
+}
+.about p{
+    position: relative;
+    left: 45%;
+    width: 50%;
+    border: 2px solid gold;
+    text-align: justify;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
 @keyframes typing {
     120% {
         color: white
