@@ -22,7 +22,7 @@ body {
     width: 50%;
     height: auto;
     position: absolute;
-    right: -70%;
+    right: -50%;
     top: -20%;
     border-radius: 50px;
     z-index: 1;
@@ -68,7 +68,7 @@ body {
 .Hello {
     color: white;
     position: absolute;
-    right: 50%;
+    right: 40%;
     top: 30%;
     /* border: 2px solid brown; */
     padding: 5px;
