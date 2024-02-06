@@ -147,4 +147,53 @@ body {
 }
 }
 
+@media screen and (max-width:480px){
+    #profile_img {
+        right: -20%;
+        top: -20%;
+        border-radius: 50px;
+    }
+    .Hello h1{
+        font-size: 200%;
+        position: relative;
+        top: 160%;
+        left: 70%;
+        width: fit-content;
+    }
+    .Hello p{
+        vertical-align: top;
+        position: relative;
+        top: 150%;
+        left: 60%;
+        width: max-content;
+        height: 20%;
+    }
+    
+    .navigation {
+        width: auto;
+        height: 110%;
+        background-color: rgb(0, 0, 0);
+        display: flex;  
+    }
+    .navigation_contents {
+        width: 90%;
+        /* margin-right: 30px; */
+        text-align: left;
+        /* border: 2px solid #ffffff; */
+    }
+    .navigation_contents li a {
+        padding: 0;
+        font-size: 11px;  
+        display: inline;  
+    }
+    .navigation_contents li {
+        margin-right: 2%;
+        padding: 1px 2px;
+        /* border: 2px solid green; */
+    }
+    .navigation_contents li a:hover {
+        font-size: 15px;
+    }
+}
+
 
