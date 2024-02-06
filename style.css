@@ -131,10 +131,15 @@ body {
     position: relative;
     left: 45%;
     width: 50%;
+    font-size: large;
     /* border: 2px solid gold; */
     text-align: justify;
     font-family: 'Quicksand', sans-serif;
 
+}
+.about p #name{
+    color: aqua;
+    font-size: larger;
 }
 
 @keyframes typing {
@@ -193,6 +198,12 @@ body {
     }
     .navigation_contents li a:hover {
         font-size: 15px;
+    }
+    .about p{
+        position: relative;
+        left: 5%;
+        width: 90%;
+    
     }
 }
 
