@@ -27,14 +27,23 @@ body {
     border-radius: 50px;
     z-index: 1;
 }
+.navigation_contents {
+    position: fixed;
+    /* border: 2px solid blue; */
+    width: calc(100% - 20px);
+    max-width: 800px;
+    right: 10px;
+    z-index: 3;
+    background-color: #000000;
+    text-align: right;
+    margin-top: 0;
+}
 
 .navigation_contents li {
     list-style-type: none;
     display: inline-block;
-    margin-right: 3.5%;
     color: rgb(255, 255, 255);
-    padding: 10px 2px;
-    padding-top: 15px;
+    padding: 10px 20px;
     /* border: 2px solid green; */
 }
 
@@ -43,26 +52,15 @@ body {
     text-decoration: none;
     color: white;
     /* border: 2px solid red; */
-    padding: 5px 2px;
+    padding: 5px 10px;
     font-size: 16px;
     transition: font-size 0.3s ease;
-
 }
 
 .navigation_contents li a:hover {
-    color:rgb(0, 221, 255);
+    color: rgb(0, 221, 255);
     font-size: larger;
     text-shadow: 0 0 20px rgb(255, 255, 255);
-}
-
-.navigation_contents {
-    position: fixed;
-    /* border: 2px solid blue; */
-    width: 100%;
-    z-index: 3;
-    background-color: #000000;
-    text-align: right;
-    margin-top: 0;
 }
 
 .Hello {
@@ -199,11 +197,12 @@ body {
     .navigation_contents li a:hover {
         font-size: 15px;
     }
+    .about{
+        width: auto;
+    }
     .about p{
-        position: relative;
         left: 5%;
         width: 90%;
-    
     }
 }
 

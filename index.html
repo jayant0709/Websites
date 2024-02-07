@@ -19,19 +19,19 @@
     <div class="outer">
         <div class="navigation">
             <ul class="navigation_contents">
-                <li><a href="https://jayant0709.github.io/Websites/">Home</a></li>
-                <li><a href=".about p" class="scroll-link">About Me</a></li>
+                <li><a id="homeID" href="#home" class="scroll-link">Home</a></li>
+                <li><a href="#about" class="scroll-link">About Me</a></li>
                 <li><a href="http://google.com" target="_blank">Certifications</a></li>
                 <li><a href="http://google.com" target="_blank">Resume</a></li>
                 <li><a href="http://google.com" target="_blank">Contact Me</a></li>
             </ul>
         </div>
-        <div class="Hello">
+        <div class="Hello" id="home">
             <img id="profile_img" src="Images/profile_1.jpg" alt="Error loading img" width="255" height="300">
             <h1>Hello I'm Jayant</h1>
             <p>Aspiring Computer Science Enthusiast</p>
         </div>
-        <div class="about">
+        <div class="about" id="about">
             <h1>About Me</h1>
             <p>Welcome to my corner of the web! My name is <span id="name">Jayant Patil</span>, and I'm currently immersed in the exciting world of technology as a B.Tech student majoring in Computer Science at VIIT College. With a passion for both software development and web design, I've honed my skills in various programming languages and problem-solving techniques.</p>
             <p>My journey into the realm of coding began with languages like Java, Python, and C++, which have equipped me with a solid foundation in software development. Delving deeper, I've explored the intricacies of Data Structures and Algorithms (DSA), finding joy in crafting elegant solutions to complex problems.</p>
@@ -46,21 +46,35 @@
                 link.addEventListener('click', function (e) {
                     e.preventDefault();
     
-                    const aboutH1 = document.querySelector('.about h1');
-    
-                    if (aboutH1) {
-                        const yOffset = -70; // You can adjust this value to fine-tune the scrolling position
-                        const y = aboutH1.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (window.innerWidth > 480) { 
+                        if (targetElement) {
+                        let yOffset = -100;
+                        if (targetId !== 'home') { // If target is not home, adjust yOffset
+                            yOffset = 80; // You can adjust this value to fine-tune the scrolling position
+                        }
+                        const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
     
                         window.scrollTo({ top: y, behavior: 'smooth' });
+                    }
+                    }
+                    else{
+                        if (targetElement) {
+                        let yOffset = -70; // Default yOffset to 0
+                        if (targetId !== 'home') { // If target is not home, adjust yOffset
+                            yOffset = 0; // You can adjust this value to fine-tune the scrolling position
+                        }
+                        const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    
+                        window.scrollTo({ top: y, behavior: 'smooth' });
+                    }
                     }
                 });
             });
         });
-    </script>
-    
-
-
+    </script>    
 </body>
 
 </html>
