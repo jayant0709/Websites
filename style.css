@@ -109,7 +109,7 @@ body {
 .about{
     margin: 2px;
     position: relative;
-    height: 180%;
+    height: 60%px;
     /* border: 2px solid darkcyan; */
     text-align: right;
     padding-top: 10%;
@@ -135,6 +135,85 @@ body {
     font-family: 'Quicksand', sans-serif;
 
 }
+
+.certification{
+    position: relative;
+    background-color: black;
+    height: 700px;
+    width: auto;
+    margin: 2px;
+    /* border: 2px solid wheat; */
+    padding-top: 8%;
+}
+.certification p{
+    position: absolute;
+    margin-left: 3%;
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.certification h2 {
+    position: relative;
+    left: 5%;
+    width: 50%;
+    transform: translateY(-50%); 
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 200%;
+    text-shadow: 0 0 20px rgb(232, 45, 45);
+}
+
+.certification #block1{
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 100px;
+    height: 100px;
+    width: 45%;
+    background-color: rgb(43, 48, 43);
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.5s ease;
+}
+
+.certification #block1:hover { /*no space in between '#block1:hover' indicates entire block1 is targeted*/
+    background-color: rgb(83, 92, 83);
+    border: 2px solid red;
+    box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
+}
+.certification #block2{
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 250px;
+    height: 100px;
+    width: 45%;
+    background-color: rgb(43, 48, 43);
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.5s ease;
+}
+.certification #block2:hover { /*no space in between '#block1:hover' indicates entire block1 is targeted*/
+    background-color: rgb(83, 92, 83);
+    border: 2px solid red;
+    box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
+}
+.certification #block3{
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 400px;
+    height: 100px;
+    width: 45%;
+    background-color: rgb(43, 48, 43);
+    border-radius: 20px;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.5s ease;
+}
+.certification #block3:hover { /*no space in between '#block1:hover' indicates entire block1 is targeted*/
+    background-color: rgb(83, 92, 83);
+    border: 2px solid red;
+    box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
+}
+
 .about p #name{
     color: aqua;
     font-size: larger;
@@ -204,6 +283,34 @@ body {
         left: 5%;
         width: 90%;
     }
+
+    .certification #block1{
+        position: absolute;
+        margin: 10%;
+        margin-top: 100px;
+        width: 80%;
+    }
+    .certification #block2{
+        position: absolute;
+        margin: 10%;
+        margin-top: 250px;
+        width: 80%;
+    }
+    .certification #block3{
+        position: absolute;
+        margin: 10%;
+        margin-top: 400px;
+        width: 80%;
+    }
+    .certification h2 {
+        position: relative;
+        left: 10%;
+        width: 90%;
+        transform: translateY(-50%); 
+        text-align: left;
+        font-size: 150%;
+    }
+
 }
 
 

@@ -21,7 +21,7 @@
             <ul class="navigation_contents">
                 <li><a id="homeID" href="#home" class="scroll-link">Home</a></li>
                 <li><a href="#about" class="scroll-link">About Me</a></li>
-                <li><a href="http://google.com" target="_blank">Certifications</a></li>
+                <li><a href="#certification" class="scroll-link">Certifications</a></li>
                 <li><a href="http://google.com" target="_blank">Resume</a></li>
                 <li><a href="http://google.com" target="_blank">Contact Me</a></li>
             </ul>
@@ -37,6 +37,20 @@
             <p>My journey into the realm of coding began with languages like Java, Python, and C++, which have equipped me with a solid foundation in software development. Delving deeper, I've explored the intricacies of Data Structures and Algorithms (DSA), finding joy in crafting elegant solutions to complex problems.</p>
             <p>In addition to my prowess in backend development, I also have a keen eye for frontend design. Leveraging HTML, CSS, and JavaScript, I enjoy creating visually appealing and user-friendly interfaces for websites.</p>
         </div>
+        <div class="certification" id="certification">
+            <div id="block1">
+                <p id="para1">Programming using Java: <br>
+                    Infosys Springboard</p>
+            </div>
+            <div id="block2">
+                <p id="para2">C++ Object Basics: <br> 
+                    Functions, Recursion, and Objects</p>
+            </div>
+            <div id="block3">
+                <p id="para3">C++ Basic Structures: <br> Vectors, Pointers, Strings, and Files</p>
+            </div>
+            <h2>Recent Certifications</h2>
+        </div>
         <div class="color-block"></div>
     </div>
 
@@ -50,31 +64,30 @@
                     const targetElement = document.getElementById(targetId);
                     
                     if (window.innerWidth > 480) { 
-                        if (targetElement) {
                         let yOffset = -100;
-                        if (targetId !== 'home') { // If target is not home, adjust yOffset
-                            yOffset = 80; // You can adjust this value to fine-tune the scrolling position
-                        }
-                        const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    
-                        window.scrollTo({ top: y, behavior: 'smooth' });
-                    }
-                    }
-                    else{
                         if (targetElement) {
-                        let yOffset = -70; // Default yOffset to 0
-                        if (targetId !== 'home') { // If target is not home, adjust yOffset
-                            yOffset = 0; // You can adjust this value to fine-tune the scrolling position
-                        }
-                        const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                            if (targetId !== 'home') { // If target is not home, adjust yOffset
+                                yOffset = 80; // You can adjust this value to fine-tune the scrolling position
+                            }
+                            const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
     
-                        window.scrollTo({ top: y, behavior: 'smooth' });
-                    }
+                            window.scrollTo({ top: y, behavior: 'smooth' });
+                        }
+                    } else {
+                        let yOffset = -80; // Default yOffset to 0
+                        if (targetElement) {
+                            if (targetId !== 'home') { // If target is not home, adjust yOffset
+                                yOffset = -20; // You can adjust this value to fine-tune the scrolling position
+                            }
+                            const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    
+                            window.scrollTo({ top: y, behavior: 'smooth' });
+                        }
                     }
                 });
             });
         });
-    </script>    
+    </script>        
 </body>
 
 </html>
