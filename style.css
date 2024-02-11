@@ -136,6 +136,10 @@ body {
 
 }
 
+.clickable div{
+    cursor: pointer;
+}
+
 .certification{
     position: relative;
     background-color: black;

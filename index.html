@@ -37,16 +37,16 @@
             <p>My journey into the realm of coding began with languages like Java, Python, and C++, which have equipped me with a solid foundation in software development. Delving deeper, I've explored the intricacies of Data Structures and Algorithms (DSA), finding joy in crafting elegant solutions to complex problems.</p>
             <p>In addition to my prowess in backend development, I also have a keen eye for frontend design. Leveraging HTML, CSS, and JavaScript, I enjoy creating visually appealing and user-friendly interfaces for websites.</p>
         </div>
-        <div class="certification" id="certification">
-            <div id="block1">
+        <div class="certification clickable"  id="certification">
+            <div id="block1" onclick="redirectTo('https://www.linkedin.com/feed/update/urn:li:activity:7098936559915216896/')">
                 <p id="para1">Programming using Java: <br>
                     Infosys Springboard</p>
             </div>
-            <div id="block2">
+            <div id="block2" onclick="redirectTo('https://www.coursera.org/account/accomplishments/verify/85D5FNYSLXS2?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course')">
                 <p id="para2">C++ Object Basics: <br> 
                     Functions, Recursion, and Objects</p>
             </div>
-            <div id="block3">
+            <div id="block3" onclick="redirectTo('https://www.linkedin.com/feed/update/urn:li:activity:7101590515795554304/')">
                 <p id="para3">C++ Basic Structures: <br> Vectors, Pointers, Strings, and Files</p>
             </div>
             <h2>Recent Certifications</h2>
@@ -55,6 +55,9 @@
     </div>
 
     <script>
+        function redirectTo(url) {
+            window.open(url, '_blank');
+        }
         document.addEventListener('DOMContentLoaded', function () {
             document.querySelectorAll('.scroll-link').forEach(function(link) {
                 link.addEventListener('click', function (e) {
