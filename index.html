@@ -29,7 +29,7 @@
         <div class="Hello" id="home">
             <img id="profile_img" src="Images/profile_1.jpg" alt="Error loading img" width="255" height="300">
             <h1>Hello I'm Jayant</h1>
-            <p>Aspiring Computer Science Enthusiast</p>
+            <p></p>
         </div>
         <div class="about" id="about">
             <h1>About Me</h1>
@@ -90,7 +90,20 @@
                 });
             });
         });
-    </script>        
+    </script>   
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const typed = new Typed('.Hello p', {
+                strings: ['Aspiring Computer Science Enthusiast'],
+                typeSpeed: 50,
+                backSpeed: 30,
+                backDelay: 1000,
+                loop: true
+            });
+        });
+    </script>
+      
 </body>
 
 </html>
