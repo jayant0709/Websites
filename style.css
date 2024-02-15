@@ -215,6 +215,19 @@ body {
     box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
 }
 
+.contact{
+    height: 300px;
+    width: auto;
+    /* margin: 2px; */
+    /* background-color: aqua ; */
+    border: 2px solid rebeccapurple;
+}
+.contact img{
+    background-color: #f9f7f7;
+    padding: 0px;
+    border: 2px solid aqua;
+    border-radius: 50%;
+}
 
 
 @keyframes typing {
