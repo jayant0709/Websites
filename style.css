@@ -128,6 +128,10 @@ body {
     font-family: 'Quicksand', sans-serif;
 
 }
+.about p #name{
+    color: aqua;
+    font-size: larger;
+}
 
 .clickable div{
     cursor: pointer;
@@ -211,10 +215,7 @@ body {
     box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
 }
 
-.about p #name{
-    color: aqua;
-    font-size: larger;
-}
+
 
 @keyframes typing {
     120% {
