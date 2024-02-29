@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(135deg, #000000, #000000);
+    background: linear-gradient(135deg, red, blue);
     color: #ffffff;
     font-family: 'Noto Sans', sans-serif;
     scroll-behavior: smooth;
@@ -14,7 +14,7 @@ body {
 .navigation {
     width: auto;
     height: 70%;
-    background-color: rgb(0, 0, 0);
+    background-color: transparent;
     display: flex;  
 }
 
@@ -34,7 +34,7 @@ body {
     max-width: 800px;
     right: 10px;
     z-index: 3;
-    background-color: #000000;
+    background-color: transparent;
     text-align: right;
     margin-top: 0;
 }
@@ -139,7 +139,7 @@ body {
 
 .certification{
     position: relative;
-    background-color: black;
+    background-color: transparent;
     height: 700px;
     width: auto;
     margin: 2px;
@@ -220,7 +220,7 @@ body {
     width: auto;
     /* margin: 2px; */
     /* background-color: aqua ; */
-    border: 2px solid rebeccapurple;
+    /* border: 2px solid rebeccapurple; */
 }
 .contact img{
     background-color: #f9f7f7;
@@ -265,7 +265,7 @@ body {
     .navigation {
         width: auto;
         height: 110%;
-        background-color: rgb(0, 0, 0);
+        background-color: transparent(0, 0, 0);
         display: flex;  
     }
     .navigation_contents {
