@@ -3,7 +3,7 @@ body {
     color: #ffffff;
     font-family: 'Noto Sans', sans-serif;
     scroll-behavior: smooth;
-    height: 1000px;
+    height: 2350px;
     margin: 0; 
 }
 .outer{
@@ -218,15 +218,16 @@ body {
 .contact{
     height: 300px;
     width: auto;
-    /* margin: 2px; */
-    /* background-color: aqua ; */
-    /* border: 2px solid rebeccapurple; */
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 0 0 20px rgb(232, 45, 45);    /* background-color: aqua ; */
 }
 .contact img{
-    background-color: #f9f7f7;
+    background-color: transparent;
     padding: 0px;
-    border: 2px solid aqua;
-    border-radius: 50%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 1%;
 }
 
 
@@ -241,6 +242,10 @@ body {
 }
 
 @media screen and (max-width:480px){
+    body{
+        height: 2550px;
+    }
+
     #profile_img {
         right: -20%;
         top: -20%;
